@@ -1,0 +1,371 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* navbar style */
+.navbar{
+  position: fixed;
+  width: 100%;
+  z-index: 999; /*tra sau*/
+  padding: 30px 0; /* lùi xuống 15 */
+  background: crimson; /* màu menu là màu crison*/
+  font-family: 'Ubuntu', sans-serif;
+}
+.max-width{
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+.navbar .logo a{
+  color: white;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.navbar .menu li{
+  list-style: none;
+  display: inline-block;
+}
+.navbar .max-width{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .menu li a{
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px; /* phần bên trái thì các thanh sẽ cách nhau 25px */
+}
+
+
+/* home section stylng */
+.home{
+  display: flex;
+  /* background: url("") no repeat center; */
+  background-color: black;
+  height: 100vh; /* chiều daì của home giới hạn là 100vh*/
+  color: white;
+  min-height: 500px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.home .max-width{
+  margin: auto 0 auto 40px;
+}
+
+.home .home-content .text-1{
+  font-size: 27px;
+}
+
+.home .home-content .text-2{
+  font-size: 55px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+.home .home-content .text-3 span{
+  color: crimson;
+  font-weight: 500;
+}
+.home .home-content .text-3{
+  font-size: 40px;
+  margin: 5px 0;
+}
+
+.home .home-content .text-4{
+  margin-bottom: 5px;
+}
+
+
+
+.home .home-content a{
+  display: inline-block;;
+  background: crimson;
+  color: white;
+  font-size: 25px;
+  padding: 12px 36px;
+  margin-top: 20px;
+  border-radius: 6px; /* thêm border */
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+.home .home-content a:hover{
+  color: crimson;
+  background-color: white;
+}
+
+/* about styling */
+section{
+  padding: 100px 0;
+}
+.about, .skills{
+  font-family: 'Poppins', sans-serif;
+}
+.about .title{
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500px;
+  padding-bottom: 20px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.about .about-content .left{
+  width: 45%;
+}
+.about .about-content .left img{
+  height: 500px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 6px;
+  padding: 30px 0;
+}
+.about .about-content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.about .about-content .right{
+  width: 55%;
+}
+.about .about-content .right .text{
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+
+}
+.about .about-content .right p{
+  text-align: justify;
+}
+.about .about-content .right a{
+  display: inline-block;;
+  background: crimson;
+  color: white;
+  font-size: 20px;
+  font-weight: 500px;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 6px; /* thêm border */
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+
+.about .about-content .right a:hover{
+  color: crimson;
+  background-color: white;
+}
+
+
+
+
+/* education styling */
+.education .title{
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500px;
+  padding-bottom: 20px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.education .keireki, .qualification{
+    position: relative;
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoratioßn: underline;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.education .highschool h3{
+    font-size: 35px;
+    font-weight: 500px;
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+}
+.education .highschool, .japaneseSchool, .university1, .university2, .qualification1{
+    margin : 0 150px;
+    margin-top: 25px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.education .highschool, .japaneseSchool, .university1, .university2, .qualification1 p{
+  color: grey;
+}
+.education .japaneseSchool h3{
+    font-size: 35px;
+    font-weight: 500px;
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+}
+
+.education .university1 h3{
+    font-size: 35px;
+    font-weight: 500px;
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+}
+.education .university2 h3{
+    font-size: 35px;
+    font-weight: 500px;
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+}
+
+.education .qualification{
+    margin-top: 50px;
+}
+
+/* skill styling */
+.skill .title{
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500px;
+  padding-bottom: 20px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.skill ul{
+  font-size: 20px;
+  font-weight: 500px;
+  margin: auto;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.skill .skills-content{
+  margin: 25px 0;
+}
+.skill .skills-content .column .bars{
+    margin-bottom: 15px;
+}
+
+.skill .skills-content .column .info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skill .skills-content .column span{
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.skill .skills-content .column .line{
+  height: 5px;
+  width: 100%;
+  background: lightgrey;
+  position: relative;
+}
+
+.skill .skills-content .column .line::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: crimson;
+}
+
+.skills-content .column .html::before{
+  width: 80%;
+}
+.skills-content .column .css::before{
+  width: 70%;
+}
+.skills-content .column .js::before{
+  width: 50%;
+}
+.skills-content .column .java::before{
+  width: 80%;
+}
+.skills-content .column .git::before{
+  width: 70%;
+}
+.skills-content .column .python::before{
+  width: 50%;
+}
+.skills-content .column .aws::before{
+  width: 30%;
+}
+
+
+
+/* contact styling */
+ .contact .title{
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500px;
+  padding-bottom: 20px;
+  font-family: 'Ubuntu', sans-serif;
+}
+.contact ul{
+    font-size: 20px;
+    font-weight: 500px;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+.contact .contact-content span{
+  color:crimson;
+}
+.contact form .field{
+  width: 100%;
+}
+ .contact form .name{
+  width: 100%;
+}
+.contact form .email{
+  width: 100%;
+}
+.contact form .field,
+.contact form .field .field{
+  height: 45px;
+  width: 100%;
+  display: block;
+  margin: 20px 0;
+}
+.contact form .textarea{
+  height: 80px;
+  width: 100%;
+}
+.contact form .field input,
+.contact form .textarea textarea{
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-family: "Poppins", sans-sans-serif;
+}
+
+.contact form .textarea textarea{
+  padding-top: 10px;
+  resize: none;
+  height: 120px
+}
+.contact form .button{
+  margin: 500px;
+  margin-top: 300px;
+}
+.contact form .button button{
+  display: inline-block;;
+  background: crimson;
+  color: white;
+  font-size: 25px;
+  padding: 12px 36px;
+  border-radius: 6px; /* thêm border */
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+
+.contact form .button button:hover{
+  color: crimson;
+  background-color: white;
+}
